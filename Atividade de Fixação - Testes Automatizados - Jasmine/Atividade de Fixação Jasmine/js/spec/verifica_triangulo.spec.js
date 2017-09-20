@@ -6,19 +6,15 @@ describe("04 - Verifica Triangulo", function(){
 		});
 		
 		it("Método isTriangle(3,3,7)", function() {
-		  	expect(isTriangle(3,3,7)).toBeTruthy();
+		  	expect(!isTriangle(3,3,7)).toBeTruthy();
 		});
 		
 		it("Método isTriangle(3,4,7)", function() {
-			expect(isTriangle(3,4,7)).toBeTruthy();
+			expect(!isTriangle(3,4,7)).toBeTruthy();
 		});
 		
 		it("Método isTriangle(0,0,0)", function() {
 		  	expect(!isTriangle(0,0,0)).toBeTruthy();
-		});
-		
-		it("Método isTriangle(-2,-2,0)", function() {
-		  	expect(!isTriangle(-2,-2,0)).toBeTruthy();
 		});
 		
 	});
